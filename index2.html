@@ -18,8 +18,13 @@
   <body>
     <header class = "mdl-layout__header">
     <script>
-      function myButtonClicked() {
+      function myButtonClicked1() {
         alert("Hello, World! You clicked my button!")
+      }
+    </script>
+    <script>
+      function myButtonClicked2() {
+        alert("Hello, World! You clicked my second button!")
       }
     </script>
       <div class = "mdl-layout__header-row">      
@@ -35,12 +40,12 @@
       </div>
     </form>
      <!-- Raised button with ripple -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" button onclick="myButtonClicked()">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" button onclick="myButtonClicked1()">
         Click Me
     </button>
-    <br>
-    <p>
-      <a href="./index2.html">My index2.html page</a>
-    </p>
+    <!-- Colored FAB button -->
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" button onclick="myButtonClicked2()">>
+      <i class="material-icons">add</i>
+    </button>
   </body>
 </html>
