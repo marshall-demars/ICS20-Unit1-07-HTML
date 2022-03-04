@@ -17,6 +17,11 @@
   </head>
   <body>
     <header class = "mdl-layout__header">
+    <script>
+      function myButtonClicked() {
+        alert("Hello, World! You clicked my button!")
+      }
+    </script>
       <div class = "mdl-layout__header-row">      
         <span class = "mdl-layout-title">Click the Button</span>     
       </div>       
@@ -30,7 +35,7 @@
       </div>
     </form>
      <!-- Raised button with ripple -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" button onclick="myButtonClicked()"</button>
         Click Me
     </button>
   </body>
